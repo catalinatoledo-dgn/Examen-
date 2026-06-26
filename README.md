@@ -1,19 +1,19 @@
 # Constructivismo
 ## Catalina Toledo 
 
-# Objetivamente
 ## ¿Qué es este proyecto?
 Mi proyecto se basa en una pieza de arte generativo interactivo desarrollada en p5.js, inspirada en la estética del Contructivismo Ruso. El programa funciona como un cartel digital que cambia; El usuario navega entre 3 estados visuales, cada uno con una intención estética y computacional distinta.
 
 ## ¿Qué es lo que muestra la pantalla?
-En sus diferentes estados muestra:
-## - Estado 0:
+En sus diferentes estados:
+
+*- Estado 0:*
 Composición geométrica estática con triángulos, círculos y líneas rojas sobre fondo negro. Utilización de tipografía vertical bold "CONSTRUCTIVISM".
 
-## - Estado 1:
+*- Estado 1:*
 Video de un ojo humano centrado en el lienzo con figuras geométricas alrededor,con audio de fondo y frases que cambian al presionar teclas aleatoriamente.
 
-## - Estado 2:
+*- Estado 2:*
 Rectángulos rojo de tamaño variable, aparecen en posiciones aleatorias mientras el video del ojo sigue al mouse.
 
 ## Elementos Visuales
@@ -78,6 +78,15 @@ Iteraciones
 Capturas del proceso
 
 ## Reflexión 
+Decidí usar un sistema de 3 estados para estructurar la experiencia, donde cada estado tiene una intención visual distinta: contemplar, escuchar y interactuar. La paleta se redujo a rojo, negro y blanco para mantener fidelidad al referente constructivista. El video del ojo fue elegido como elemento central porque conecta la idea del *observador* con la obra misma, **El ojo que mira también es mirado**.
+
+*Dificultades encontras*
+La principal dificultad fue integrar el video y el audio de forma funcional en el navegador, ya que al estar realizandolo en el ipad, Safari bloquea la reproducción autómatica de multimedia. La solución fue implementar un botón externo provisorio para activar el cambio de estado. También fue desafiante entender cómo map() traduce coordenadas del mouse en posiciones de pantalla sin que el movimiento se sintiera brusco.
+
+*Aprendizajes obtenidos*
+Comprendí que el pensamiento computacional no es solo lógica, es una forma de tomar decisiones de diseño. Cada función, cada bucle y cada variable tiene una razón estética detrás. El uso de map() y random() me demostró que con herramientas simples se puede generar complejidad visual. 
+El mayor aprendizaje fue entender que un sistema de estados es una forma de narrar, el programa cuenta una historia a través de sus transiciones.
+
 
 ## Presentación
 Concepto del proyecto
