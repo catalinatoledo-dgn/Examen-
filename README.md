@@ -95,7 +95,6 @@ El mayor aprendizaje fue entender que un sistema de estados es una forma de narr
 **Estado 0**
 ![Estado 0](IMG_0328.jpg)
 ![Estado 0](IMG_0329.jpg)
-![Estado 0](IMG_0343.jpg)
 
 **Estado 1**
 ![Estado 1](IMG_0336.jpg)
