@@ -43,8 +43,8 @@ El constructivismo ruso fue un movimiento artístico y político que surgió en 
 Los carteles constructivistas se caracterizaban por el uso de formas geométricas puras (triángulos, círculos, rectángulos), el uso reducido de colores (rojo, blanco y negro), tipografías bold como elemento compositivo y diagonales que generan tensión visual. En este proyecto, esos principios se traducen computacionalmente, los bucles generan formas, las funciones organizan los estados y map() conecta la interacción humana con la composición visual.
 
 **Referentes**
-![Referentes](IMG_9715.JPG)
-![Referentes](IMG_9721.JPG)
+![Imagenes](IMG_9715.JPG) 
+![Imagenes](IMG_9721.JPG)
 
 ## Principio de diseño explorado
 Tensión visual y geometría activa
