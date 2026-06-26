@@ -105,4 +105,4 @@ El mayor aprendizaje fue entender que un sistema de estados es una forma de narr
 ![Estado 1](IMG_0343.jpg)
 
 ## Diagrama de flujo
-![Diagrama](Diagrama%20de%20flujo.JPG)
+![Diagrama](IMG_0346.jpeg)
