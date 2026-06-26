@@ -88,10 +88,4 @@ Comprendí que el pensamiento computacional no es solo lógica, es una forma de 
 El mayor aprendizaje fue entender que un sistema de estados es una forma de narrar, el programa cuenta una historia a través de sus transiciones.
 
 
-## Presentación
-Concepto del proyecto
-Referentes
-Funcionamiento general
-Estados y eventos
-Uso de multimedia
-Estructura general del sistema
+## Diagrama de flujo
