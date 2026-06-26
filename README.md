@@ -87,5 +87,9 @@ La principal dificultad fue integrar el video y el audio de forma funcional en e
 Comprendí que el pensamiento computacional no es solo lógica, es una forma de tomar decisiones de diseño. Cada función, cada bucle y cada variable tiene una razón estética detrás. El uso de map() y random() me demostró que con herramientas simples se puede generar complejidad visual. 
 El mayor aprendizaje fue entender que un sistema de estados es una forma de narrar, el programa cuenta una historia a través de sus transiciones.
 
+## Capturas del proyecto
+**Estado 0**
+![Estado 0](IMG_0328.jpg)
 
 ## Diagrama de flujo
+![Diagrama](Diagrama%20de%20flujo.JPG)
