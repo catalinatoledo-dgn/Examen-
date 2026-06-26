@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Diagrama de Flujo — Constructivismo</title>
+<style>
+  body { background: #1a1a1a; display: flex; justify-content: center; padding: 20px; font-family: Arial, sans-serif; }
+  .container { background: #111; border-radius: 16px; padding: 30px; max-width: 800px; width: 100%; }
+  svg { width: 100%; height: auto; }
+</style>
+</head>
+<body>
+<div class="container">
+<svg viewBox="0 0 780 1100" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#aaa" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+  <marker id="arrow-dash" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
+
+<!-- LEYENDA -->
+<rect x="20" y="20" width="160" height="200" rx="10" fill="#222" stroke="#444" stroke-width="1"/>
+<text x="30" y="42" font-size="13" font-weight="bold" fill="#fff" font-family="Arial">LEYENDA</text>
+<!-- Inicio/Fin -->
+<ellipse cx="50" cy="65" rx="18" ry="12" fill="#9b59b6"/>
+<text x="75" y="69" font-size="11" fill="#ccc" font-family="Arial">Inicio / Fin</text>
+<!-- Estado -->
+<rect x="32" y="85" width="36" height="20" rx="4" fill="#5b9bd5"/>
+<text x="75" y="99" font-size="11" fill="#ccc" font-family="Arial">Estado</text>
+<!-- Proceso -->
+<rect x="32" y="115" width="36" height="20" rx="4" fill="#27ae60"/>
+<text x="75" y="129" font-size="11" fill="#ccc" font-family="Arial">Proceso</text>
+<!-- Decision -->
+<polygon points="50,145 68,155 50,165 32,155" fill="#e67e22"/>
+<text x="75" y="159" font-size="11" fill="#ccc" font-family="Arial">Decisión</text>
+<!-- Input -->
+<rect x="32" y="175" width="36" height="20" rx="4" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="4 2"/>
+<text x="75" y="189" font-size="11" fill="#ccc" font-family="Arial">Input usuario</text>
+<!-- Flecha -->
+<line x1="32" y1="210" x2="60" y2="210" stroke="#aaa" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="75" y="214" font-size="11" fill="#ccc" font-family="Arial">Flujo</text>
+
+<!-- INICIO -->
+<ellipse cx="430" cy="50" rx="80" ry="28" fill="#9b59b6"/>
+<text x="430" y="45" font-size="13" font-weight="bold" fill="#fff" font-family="Arial" text-anchor="middle">INICIO</text>
+<text x="430" y="62" font-size="11" fill="#ddd" font-family="Arial" text-anchor="middle">Se ejecuta preload() y setup()</text>
+
+<line x1="430" y1="78" x2="430" y2="108" stroke="#aaa" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<!-- ESTADO 0 box -->
+<rect x="350" y="108" width="160" height="44" rx="8" fill="#333" stroke="#555" stroke-width="1"/>
+<text x="430" y="126" font-size="13" font-weight="bold" fill="#fff" font-family="Arial" text-anchor="middle">estado = 0</text>
+<text x="430" y="143" font-size="11" fill="#aaa" font-family="Arial" text-anchor="middle">(INICIO)</text>
+
+<line x1="430" y1="152" x2="430" y2="182" stroke="#aaa" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<!-- ESTADO 0 pantalla -->
+<rect x="280" y="182" width="300" height="80" rx="8" fill="#5b9bd5"/>
+<text x="430" y="202" font-size="13" font-weight="bold" fill="#fff" font-family="Arial" text-anchor="middle">0. PANTALLA DE INICIO</text>
+<text x="430" y="220" font-size="11" fill="#ddd" font-family="Arial" text-anchor="middle">dibujarInicio()</text>
+<text x="430" y="236" font-size="11" fill="#ddd" font-family="Arial" text-anchor="middle">Formas geométricas + bucle for + texto</text>
+<text x="430" y="252" font-size="11" fill="#ddd" font-family="Arial" text-anchor="middle">"HAZ CLICK PARA INICIAR"</text>
+
+<!-- INPUT boton -->
+<rect x="620" y="195" width="130" height="44" rx="6" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="4 2"/>
+<text x="685" y="213" font-size="11" fill="#ccc" font-family="Arial" text-anchor="middle">INPUT</text>
+<text x="685" y="229" font-size="11" fill="#ccc" font-family="Arial" text-anchor="middle">Botón SIGUIENTE</text>
+<line x1="620" y1="217" x2="582" y2="217" stroke="#888" stroke-width="1.5" stroke-dasharray="4 2" marker-end="url(#arrow-dash)"/>
+
+<line x1="430" y1="262" x2="430" y2="292" stroke="#aaa" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<!-- ESTADO 1 box -->
+<rect x="350" y="292" width="160" height="44" rx="8" fill="#333" stroke="#555" stroke-width="1"/>
+<text x="430" y="310" font-size="13" font-weight="bold" fill="#fff" font-family="Arial" text-anchor="middle">estado = 1</text>
+<text x="430" y="327" font-size="11" fill="#aaa" font-family="Arial" text-anchor="middle">(PRESENTACIÓN)</text>
+
+<line x1="430" y1="336" x2="430" y2="366" stroke="#aaa" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<!-- ESTADO 1 pantalla -->
+<rect x="260" y="366" width="340" height="100" rx="8" fill="#5b9bd5"/>
+<text x="430" y="386" font-size="13" font-weight="bold" fill="#fff" font-family="Arial" text-anchor="middle">1. PRESENTACIÓN</text>
+<text x="430" y="404" font-size="11" fill="#ddd" font-family="Arial" text-anchor="middle">dibujarPresentacion()</text>
+<text x="430" y="420" font-size="11" fill="#ddd" font-family="Arial" text-anchor="middle">Video + Audio + Formas geométricas</text>
+<text x="430" y="436" font-size="11" fill="#ddd" font-family="Arial" text-anchor="middle">Frases aleatorias con keyPressed()</text>
+<text x="430" y="452" font-size="11" fill="#ddd" font-family="Arial" text-anchor="middle">random() selecciona frase del array</text>
+
+<!-- INPUT tecla -->
+<rect x="620" y="395" width="130" height="44" rx="6" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="4 2"/>
+<text x="685" y="413" font-size="11" fill="#ccc" font-family="Arial" text-anchor="middle">INPUT</text>
+<text x="685" y="429" font-size="11" fill="#ccc" font-family="Arial" text-anchor="middle">Tecla presionada</text>
+<line x1="620" y1="417" x2="602" y2="417" stroke="#888" stroke-width="1.5" stroke-dasharray="4 2" marker-end="url(#arrow-dash)"/>
+
+<!-- INPUT boton 2 -->
+<rect x="620" y="455" width="130" height="44" rx="6" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="4 2"/>
+<text x="685" y="473" font-size="11" fill="#ccc" font-family="Arial" text-anchor="middle">INPUT</text>
+<text x="685" y="489" font-size="11" fill="#ccc" font-family="Arial" text-anchor="middle">Botón SIGUIENTE</text>
+<line x1="620" y1="477" x2="602" y2="460" stroke="#888" stroke-width="1.5" stroke-dasharray="4 2" marker-end="url(#arrow-dash)"/>
+
+<line x1="430" y1="466" x2="430" y2="496" stroke="#aaa" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<!-- ESTADO 2 box -->
+<rect x="350" y="496" width="160" height="44" rx="8" fill="#333" stroke="#555" stroke-width="1"/>
+<text x="430" y="514" font-size="13" font-weight="bold" fill="#fff" font-family="Arial" text-anchor="middle">estado = 2</text>
+<text x="430" y="531" font-size="11" fill="#aaa" font-family="Arial" text-anchor="middle">(INTERACTIVO)</text>
+
+<line x1="430" y1="540" x2="430" y2="570" stroke="#aaa" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<!-- ESTADO 2 pantalla -->
+<rect x="240" y="570" width="380" height="120" rx="8" fill="#27ae60"/>
+<text x="430" y="590" font-size="13" font-weight="bold" fill="#fff" font-family="Arial" text-anchor="middle">2. INTERACTIVO</text>
+<text x="430" y="608" font-size="11" fill="#ddd" font-family="Arial" text-anchor="middle">dibujarInteractivo()</text>
+<text x="430" y="624" font-size="11" fill="#ddd" font-family="Arial" text-anchor="middle">map(mouseX) → tamaño de formas</text>
+<text x="430" y="640" font-size="11" fill="#ddd" font-family="Arial" text-anchor="middle">random() → posición de rectángulos</text>
+<text x="430" y="656" font-size="11" fill="#ddd" font-family="Arial" text-anchor="middle">Ojo sigue al mouse (mouseX - 50)</text>
+<text x="430" y="672" font-size="11" fill="#ddd" font-family="Arial" text-anchor="middle">keyPressed() → frase aleatoria</text>
+
+<!-- INPUT mouse -->
+<rect x="30" y="590" width="130" height="44" rx="6" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="4 2"/>
+<text x="95" y="608" font-size="11" fill="#ccc" font-family="Arial" text-anchor="middle">INPUT</text>
+<text x="95" y="624" font-size="11" fill="#ccc" font-family="Arial" text-anchor="middle">Mouse + Teclado</text>
+<line x1="160" y1="612" x2="238" y2="612" stroke="#888" stroke-width="1.5" stroke-dasharray="4 2" marker-end="url(#arrow-dash)"/>
+
+<!-- PROCESO cambiarEstado -->
+<rect x="320" y="730" width="220" height="54" rx="8" fill="#e67e22"/>
+<text x="430" y="752" font-size="13" font-weight="bold" fill="#fff" font-family="Arial" text-anchor="middle">cambiarEstado()</text>
+<text x="430" y="770" font-size="11" fill="#fff" font-family="Arial" text-anchor="middle">estado avanza 0 → 1 → 2</text>
+
+<line x1="430" y1="690" x2="430" y2="730" stroke="#aaa" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<!-- FIN -->
+<ellipse cx="430" cy="840" rx="80" ry="28" fill="#9b59b6"/>
+<text x="430" y="835" font-size="13" font-weight="bold" fill="#fff" font-family="Arial" text-anchor="middle">FIN</text>
+<text x="430" y="852" font-size="11" fill="#ddd" font-family="Arial" text-anchor="middle">Estado 2 activo</text>
+
+<line x1="430" y1="784" x2="430" y2="812" stroke="#aaa" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<!-- RESUMEN -->
+<rect x="560" y="700" width="190" height="180" rx="10" fill="#222" stroke="#444" stroke-width="1"/>
+<text x="655" y="722" font-size="13" font-weight="bold" fill="#fff" font-family="Arial" text-anchor="middle">RESUMEN DEL FLUJO</text>
+<text x="655" y="748" font-size="12" fill="#5b9bd5" font-family="Arial" text-anchor="middle">INICIO (0)</text>
+<line x1="655" y1="754" x2="655" y2="768" stroke="#aaa" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="655" y="782" font-size="12" fill="#5b9bd5" font-family="Arial" text-anchor="middle">PRESENTACIÓN (1)</text>
+<line x1="655" y1="788" x2="655" y2="802" stroke="#aaa" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="655" y="816" font-size="12" fill="#27ae60" font-family="Arial" text-anchor="middle">INTERACTIVO (2)</text>
+<line x1="655" y1="822" x2="655" y2="836" stroke="#aaa" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="655" y="850" font-size="11" fill="#aaa" font-family="Arial" text-anchor="middle">draw() loop continuo</text>
+<text x="655" y="868" font-size="11" fill="#aaa" font-family="Arial" text-anchor="middle">60fps siempre activo</text>
+
+</svg>
+</div>
+</body>
+</html>
